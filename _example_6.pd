@@ -44,7 +44,6 @@
 #X msg 544 276 group \$1;
 #X obj 544 258 hradio 15 1 0 4 empty empty empty 0 -6 0 8 -262144 -1
 -1 0;
-#X obj 416 319 model e5.obj;
 #X obj 416 160 pix_texture;
 #X obj 416 117 pix_image tex.jpg;
 #X obj 258 110 gemhead;
@@ -54,16 +53,17 @@
 #X obj 416 198 translateXYZ 0 2 0;
 #X obj 258 345 sphere 0.5 20;
 #X text 519 163 no uv;
-#X connect 0 0 11 0;
+#X obj 416 319 model e4.obj;
+#X connect 0 0 10 0;
 #X connect 1 0 2 0;
 #X connect 4 0 5 0;
 #X connect 5 0 4 0;
-#X connect 7 0 9 0;
+#X connect 7 0 18 0;
 #X connect 8 0 7 0;
-#X connect 10 0 16 0;
-#X connect 11 0 10 0;
+#X connect 9 0 15 0;
+#X connect 10 0 9 0;
+#X connect 11 0 13 0;
 #X connect 12 0 14 0;
-#X connect 13 0 15 0;
-#X connect 14 0 13 0;
-#X connect 15 0 17 0;
-#X connect 16 0 9 0;
+#X connect 13 0 12 0;
+#X connect 14 0 16 0;
+#X connect 15 0 18 0;
